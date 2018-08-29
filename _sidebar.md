@@ -4,4 +4,5 @@
 * [Creating a Repository](creating.md)
 * [Tracking Changes](changes.md)
 * [Exploring History](history.md)
+* [Ignoring Files](ignoring.md)
 * [Reference](reference.md)
