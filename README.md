@@ -1,6 +1,6 @@
 # Introduction To Git
 
-A short introduction to Git and the Gitlab server in the School of Computer Science and Informatics.
+A short introduction to Git and the Gitlab server in the School of Computer Science and Informatics. This course assumes you are using the Windows labs in the School (C/2.04 & C/2.05).
 
 This course will walk you through the basics of using version control to keep track of your work. There are some very good reasons to use version control:
 
