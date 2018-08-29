@@ -253,7 +253,7 @@ It's important to remember that we must use the commit number that identifies th
 
 The fact that files can be reverted one by one tends to change the way people organize their work. If everything is in one large document, it's hard (but not impossible) to undo changes to the introduction without also undoing changes made later to the conclusion. If the introduction and conclusion are stored in separate files, on the other hand, moving backward and forward in time becomes much easier.
 
-> #### Exercise: Recovering Older Versions of a File
+> ## Exercise: Recovering Older Versions of a File
 >
 > Jennifer has made changes to the Python script that she has been working on for weeks, and the modifications she made this morning "broke" the script and it no longer runs. She has spent ~ 1hr trying to fix it, with no luck...
 >
@@ -271,13 +271,13 @@ The fact that files can be reverted one by one tends to change the way people or
 
 &nbsp;
 
-> #### Exercise: Getting Rid of Staged Changes
+> ## Exercise: Getting Rid of Staged Changes
 >
 > `git checkout` can be used to restore a previous commit when unstaged changes have been made, but will it also work for changes that have been staged but not committed? Make a change to `mars.txt`, add that change, and use `git checkout` to see if you can remove your change.
 
 &nbsp;
 
-> #### Exercise: Explore and Summarise Histories
+> ## Exercise: Explore and Summarise Histories
 >
 > Exploring history is an important part of git, often it is a challenge to find the right commit ID, especially if the commit is from several months ago.
 >
