@@ -372,6 +372,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >
 > Sometimes, e.g. in the case of the text documents a line-wise diff is too coarse. That is where the `--color-words` option of `git diff` comes in very useful as it highlights the changed words using colors.
 
+&nbsp;
+
 > #### Paging the Log
 >
 > When the output of `git log` is too long to fit in your screen, `git` uses a program to split it into pages of the size of your screen. When this "pager" is called, you will notice that the last line in your screen is a `:`, instead of your usual prompt.
@@ -382,6 +384,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >     press <kbd>/</kbd>
 >     and type `some_word`.
 >     Navigate through matches pressing <kbd>N</kbd>.
+
+&nbsp;
 
 > #### Limit Log Size
 >
@@ -428,6 +432,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ```
 >
 
+&nbsp;
+
 > #### Directories
 >
 > Two important facts you should know about directories in Git.
@@ -457,95 +463,100 @@ To recap, when we want to add changes to our repository, we first need to add th
 
 ![The Git Commit Workflow](_img/git-committing.svg)
 
-## Choosing a Commit Message
+> ## Exercise: Choosing a Commit Message
+>
+> Which of the following commit messages would be most appropriate for the last commit made to `mars.txt`?
+>
+> 1. "Changes"
+> 2. "Added line 'And there is very little phone signal' to mars.txt"
+> 3. "Discuss lack of phone signal on Mars"
+>
+> #### Solution
+>
+> Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using "git diff" to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.
 
-Which of the following commit messages would be most appropriate for the last commit made to `mars.txt`?
+&nbsp;
 
-1. "Changes"
-2. "Added line 'And there is very little phone signal' to mars.txt"
-3. "Discuss lack of phone signal on Mars"
+> ## Exercise: Committing Multiple Files
+>
+> The staging area can hold changes from any number of files that you want to commit as a single snapshot.
+>
+> 1. Add some text to `mars.txt`
+> 2. Create a new file `venus.txt` with your initial thoughts about Venus
+> 3. Add changes from both files to the staging area, and commit those changes.
+>
+> #### Solution
+>
+> First we make our changes to the `mars.txt` and `venus.txt` files:
+>
+> ```bash
+> $ nano mars.txt
+> $ cat mars.txt
+> ```
+>
+> ```
+> Mars is also a planet with a four-letter name.
+> ```
+>
+> ```bash
+> $ nano venus.txt
+> $ cat venus.txt
+> ```
+>
+> ```
+> Venus is a nice planet.
+> ```
+>
+> Now you can add both files to the staging area. We can do that in one line:
+>
+> ```bash
+> $ git add mars.txt venus.txt
+> ```
+>
+> Or with multiple commands:
+>
+> ```bash
+> $ git add mars.txt
+> $ git add venus.txt
+> ```
+>
+> Now the files are ready to commit. You can check that using `git status`. If you are ready to commit use:
+>
+> ```bash
+> $ git commit -m "Write some notes on Venus"
+> ```
+>
+> ```output
+> [master cc127c2]
+>  Write some notes on Venus
+>  2 files changed, 2 insertions(+)
+>  create mode 100644 venus.txt
+> ```
 
-#### Solution
+&nbsp;
 
-Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using "git diff" to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.
+> ## Exercise: `bio` Repository
+>
+> * Create a new Git repository on your computer called `bio`.
+> * Write a three-line biography for yourself in a file called `me.txt`, commit your changes
+> * Modify one line, add a fourth line
+> * Display the differences between its updated state and its original state.
 
+&nbsp;
 
-
-## Committing Multiple Files
-
-The staging area can hold changes from any number of files that you want to commit as a single snapshot.
-
-1. Add some text to `mars.txt`
-2. Create a new file `venus.txt` with your initial thoughts about Venus
-3. Add changes from both files to the staging area, and commit those changes.
-
-#### Solution
-
-First we make our changes to the `mars.txt` and `venus.txt` files:
-
-```bash
-$ nano mars.txt
-$ cat mars.txt
-```
-
-```
-Mars is also a planet with a four-letter name.
-```
-
-```bash
-$ nano venus.txt
-$ cat venus.txt
-```
-
-```
-Venus is a nice planet.
-```
-
-Now you can add both files to the staging area. We can do that in one line:
-
-```bash
-$ git add mars.txt venus.txt
-```
-
-Or with multiple commands:
-
-```bash
-$ git add mars.txt
-$ git add venus.txt
-```
-
-Now the files are ready to commit. You can check that using `git status`. If you are ready to commit use:
-
-```bash
-$ git commit -m "Write some notes on Venus"
-```
-
-```output
-[master cc127c2]
- Write some notes on Venus
- 2 files changed, 2 insertions(+)
- create mode 100644 venus.txt
-```
-
-## `bio` Repository
-
-* Create a new Git repository on your computer called `bio`.
-* Write a three-line biography for yourself in a file called `me.txt`, commit your changes
-* Modify one line, add a fourth line
-* Display the differences between its updated state and its original state.
-
-## Author and Committer
-For each of the commits you have done, Git stored your name twice. You are named as the author and as the committer. You can observe that by telling Git to show you more information about your last commits:
-
-```bash
-$ git log --format=full
-```
-
-When committing you can name someone else as the author:
-
-```
-$ git commit --author="Another User <UserA@cardiff.ac.uk>"
-```
-Create a new repository and create two commits: one without the `--author` option and one by naming a colleague of yours as the > author. Run `git log` and `git log --format=full`. Think about ways how that can allow you to collaborate with your colleagues.
+> ## Exercise: Author and Committer
+> For each of the commits you have done, Git stored your name twice. You are named as the author and as the committer. You can observe that by telling Git to show you more information about your last commits:
+>
+> ```bash
+> $ git log --format=full
+> ```
+>
+> When committing you can name someone else as the author:
+>
+> ```
+> $ git commit --author="Another User <UserA@cardiff.ac.uk>"
+> ```
+> Create a new repository and create two commits: one without the `--author` option and one by naming a colleague of yours as the > author. Run `git log` and `git log --format=full`. Think about ways how that can allow you to collaborate with your colleagues.
+>
 
 [commit-messages]: https://chris.beams.io/posts/git-commit/
