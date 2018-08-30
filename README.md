@@ -30,5 +30,7 @@ $ type-this-command-and-hit-enter
 
 !> Really important things look like this
 
+If you have problems using any of the software or services described in this course, check the School's [introductory documentation](https://docs.cs.cf.ac.uk/notes/) for guidance.
+
 
 [filename](about.md ':include')
