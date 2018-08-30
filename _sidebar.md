@@ -5,4 +5,6 @@
 * [Tracking Changes](changes.md)
 * [Exploring History](history.md)
 * [Ignoring Files](ignoring.md)
+* [Gitlab](gitlab.md)
+* [Collaborating](collab.md)
 * [Reference](reference.md)
