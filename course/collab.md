@@ -12,7 +12,7 @@ For the next step, get into pairs.  One person will be the "Owner" and the other
 
 The Owner needs to give the Collaborator access. On GitLab, click the settings button on the left, then select Members, and enter your partner's username.
 
-![Adding Collaborators on GitLab](_img/gitlab_member.png)
+![Adding Collaborators on GitLab](_img/gitlab_member.PNG)
 
 To accept access to the Owner's repo, the Collaborator needs to respond to a notification on GitLab.
 

@@ -23,11 +23,11 @@ On the 'New Project' screen you need to give your project a name in the 'Project
 
 As soon as the repository is created, GitLab displays a page with some information about the project:
 
-![GitLab welcome screen](_img/gitlab_new1.png)
+![GitLab welcome screen](_img/gitlab_new1.PNG)
 
 If you scroll down, you will see a lot of information about how to add files to your repository:
 
-![GitLab welcome screen](_img/gitlab_new2.png)
+![GitLab welcome screen](_img/gitlab_new2.PNG)
 
 This 'New Project' process has effectively done the following on the GitLab server:
 
@@ -51,11 +51,11 @@ Before we can connect our local repository with the remote repository on GitLab,
 
 Click on the profile link in the top right corner, then 'Settings' to access your profile settings page:
 
-![GitLab settings](_img/gitlab_settings.png)
+![GitLab settings](_img/gitlab_settings.PNG)
 
 Then click on 'SSH Keys' in the left hand menu:
 
-![GitLab SSH Keys](_img/gitlab_sshkeys.png)
+![GitLab SSH Keys](_img/gitlab_sshkeys.PNG)
 
 Create a public/private key pair with the following command in the command line:
 
@@ -81,13 +81,13 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCswL/nrjoonUrdbPk+0wDyvSpdH6p5ylhK0v/S3784
 
 Select all this output, and copy it. Now paste it into the 'Key' box in the 'SSH Keys' page on GitLab, and click 'Add Key'.
 
-![GitLab SSH Keys](_img/gitlab_sshkey_added.png)
+![GitLab SSH Keys](_img/gitlab_sshkey_added.PNG)
 
 Your account on the School PC is now linked to your profile on the GitLab server, and you will be able to add code to and retrieve code from the GitLab server. If you have additional machines you would like to link, you can do this in the same way.
 
 Now that our account is authorised to access our project, the next step is to connect the two repositories.  We do this by making the GitLab repository a [remote](reference#remote) for the local repository. The home page of the repository on GitLab includes the string we need to identify it:
 
-![Where to Find Repository URL on GitLab](_img/gitlab_repo_url.png)
+![Where to Find Repository URL on GitLab](_img/gitlab_repo_url.PNG)
 
 Copy that URL from the browser, go into the local `planets` repository on the command line, and run this command:
 
