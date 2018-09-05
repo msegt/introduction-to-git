@@ -51,7 +51,7 @@ Before we can connect our local repository with the remote repository on GitLab,
 
 Click on the profile link in the top right corner, then 'Settings' to access your profile settings page:
 
-![GitLab settings](_img/gitlab_settings.PNG)
+![GitLab settings](_img/gitlab_settings.png)
 
 Then click on 'SSH Keys' in the left hand menu:
 
@@ -87,7 +87,7 @@ Your account on the School PC is now linked to your profile on the GitLab server
 
 Now that our account is authorised to access our project, the next step is to connect the two repositories.  We do this by making the GitLab repository a [remote](reference#remote) for the local repository. The home page of the repository on GitLab includes the string we need to identify it:
 
-![Where to Find Repository URL on GitLab](_img/gitlab_repo_url.PNG)
+![Where to Find Repository URL on GitLab](_img/gitlab_repo_url.png)
 
 Copy that URL from the browser, go into the local `planets` repository on the command line, and run this command:
 
