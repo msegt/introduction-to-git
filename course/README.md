@@ -2,6 +2,8 @@
 
 A short introduction to Git and the Gitlab server in the School of Computer Science and Informatics.
 
+?> If you are unfamiliar with the PC lab in the School, you should work through the [Introduction to the PC Lab](http://comsc.pages.cs.cf.ac.uk/introduction-to-pc-lab/#/) session before starting this course.
+
 This course will walk you through the basics of using version control to keep track of your work. There are some very good reasons to use version control:
 
 * Nothing that is committed to version control is ever lost, unless you work really, really hard at it. Since all old versions of files are saved, it’s always possible to go back in time to see exactly who wrote what on a particular day, or what version of a program was used to generate a particular set of results.
