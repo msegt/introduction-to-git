@@ -2,10 +2,10 @@
 
 Once Git is configured, we can start using it.
 
-First, let's create a directory on our H: drive for our work and then move into that directory:
+First, let's create a directory for our work and then move into that directory:
 
 ```bash
-$ cd /h
+$ cd ~
 $ mkdir planets
 $ cd planets
 ```
