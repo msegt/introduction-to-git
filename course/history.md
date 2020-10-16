@@ -229,9 +229,7 @@ $ git checkout HEAD mars.txt
 >
 > The “detached HEAD” is like “look, but don't touch” here, so you shouldn't make any changes in this state. After investigating your repo's past state, reattach your `HEAD` with `git checkout master`.
 
-It's important to remember that we must use the commit number that identifies the state of the repository _before_ the change we're trying to undo. A common mistake is to use the number of the commit in which we made the change we're trying to get rid of. In the example below, we want to retrieve the state from before the most recent commit (`HEAD~1`), which is commit `f22b25e`:
-
-![Git Checkout](../fig/git-checkout.svg)
+It's important to remember that we must use the commit number that identifies the state of the repository _before_ the change we're trying to undo. A common mistake is to use the number of the commit in which we made the change we're trying to get rid of.
 
 > #### Simplifying the Common Case
 >

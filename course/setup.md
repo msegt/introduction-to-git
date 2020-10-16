@@ -35,7 +35,7 @@ We can also set our favourite text editor, following this table:
 | Emacs                                 | `$ git config --global core.editor "emacs"`                                                                                      |
 | Vim                                   | `$ git config --global core.editor "vim"`                                                                                        |
 
-It is possible to reconfigure the text editor for Git whenever you want to change it. In the Windows Lab in COMSC, unless you are comfortable with a command line editor like Vim or Emacs, we would suggest you use Sublime Text (Win, 64-bit install).
+It is possible to reconfigure the text editor for Git whenever you want to change it. On your University provided laptop, unless you are comfortable with a command line editor like Vim or Emacs, we would suggest you use Atom.
 
 > #### Exiting Vim
 >

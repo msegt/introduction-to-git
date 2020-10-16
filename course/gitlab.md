@@ -2,7 +2,7 @@
 
 Version control really comes into its own when we begin to collaborate with other people. We already have most of the machinery we need to do this; the only thing missing is to copy changes from one repository to another.
 
-Systems like Git allow us to move work between any two repositories. In practice, though, it's easiest to use one copy as a central hub, and to keep it on the web rather than on someone's laptop. Most programmers use hosting services like [GitLab](https://GitLab.com), [BitBucket](https://bitbucket.org) or [GitLab](https://gitlab.com/) to hold those central copies. All these services provide a level of functionality for free. In the School of Computer Science & Informatics we provide our own [university hosted version of GitLab](https://git.cardiff.ac.uk), available at [https://git.cardiff.ac.uk](https://git.cardiff.ac.uk).
+Systems like Git allow us to move work between any two repositories. In practice, though, it's easiest to use one copy as a central hub, and to keep it on the web rather than on someone's laptop. Most programmers use hosting services like [GitLab](https://gitlab.com), [BitBucket](https://bitbucket.org) or [Github](https://github.com/) to hold those central copies. All these services provide a level of functionality for free. In the School of Computer Science & Informatics we provide our own [university hosted version of GitLab](https://git.cardiff.ac.uk), available at [https://git.cardiff.ac.uk](https://git.cardiff.ac.uk).
 
 !> In addition to the notes in this course there is an introduction to the School's Gitlab server in the [Introductory documents](https://docs.cs.cf.ac.uk/notes/using-gitlab/)
 
@@ -14,7 +14,7 @@ If you've not logged in previously and have no projects, the Welcome screen will
 
 ![GitLab welcome screen](_img/gitlab_welcome.png)
 
-On the 'New Project' screen you need to give your project a name in the 'Project Name' field. You can also add an optional description for the project. The 'Visibility Level' option allows you to set the visibility of the project. A 'private' project is only visible to you, although you can explicitly choose to give other individuals access to the project later. An 'internal' project will be visible to all users logged in to the GitLab server. Public visibility would allow the project to be seen by anyone, but this option is not permitted in the School's GitLab instance. The final option would allow us to add a README file to the new project.
+On the 'New Project' screen you need to give your project a name in the 'Project Name' field. You can also add an optional description for the project. The 'Visibility Level' option allows you to set the visibility of the project. A 'private' project is only visible to you, although you can explicitly choose to give other individuals access to the project later. An 'internal' project will be visible to all users logged in to the GitLab server. Public visibility would allow the project to be seen by anyone, but this option is not permitted in the University's GitLab instance. The final option would allow us to add a README file to the new project.
 
 ?> Create a new Project called 'planets'
 
@@ -82,7 +82,9 @@ Select all this output, and copy it. Now paste it into the 'Key' box in the 'SSH
 
 ![GitLab SSH Keys](_img/gitlab_sshkey_added.PNG)
 
-Your account on the School PC is now linked to your profile on the GitLab server, and you will be able to add code to and retrieve code from the GitLab server. If you have additional machines you would like to link, you can do this in the same way.
+Your account on the local machine is now linked to your profile on the GitLab server, and you will be able to add code to and retrieve code from the GitLab server. If you have additional machines you would like to link, you can do this in the same way.
+
+!> Note - you will need to be connected to the University VPN to be able to push code to the Gitlab server
 
 Now that our account is authorised to access our project, the next step is to connect the two repositories. We do this by making the GitLab repository a [remote](reference#remote) for the local repository. The home page of the repository on GitLab includes the string we need to identify it:
 
