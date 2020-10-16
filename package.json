@@ -11,5 +11,8 @@
     "url": "git@gitlab.cs.cf.ac.uk:comsc/introduction-to-git.git"
   },
   "author": "Martin Chorley",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "alex": "^9.0.1"
+  }
 }
