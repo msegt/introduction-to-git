@@ -1,6 +1,8 @@
 image: alpine:latest
 
 pages:
+  tags:
+    comsc-ci
   stage: deploy
   script:
   - mkdir .public
