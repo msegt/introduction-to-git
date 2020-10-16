@@ -12,6 +12,8 @@ This course will walk you through the basics of using version control to keep tr
 
 Teams are not the only ones to benefit from version control: lone students can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all students if you ever need to come back to a project later on (e.g., a year later, when memory has faded), or recover your work to a previous (working) version after changing it a little bit too much (breaking it).
 
+<!-- alex ignore just -->
+
 Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Every large software development project relies on it, and most programmers use it for their small jobs as well. And it isn’t just for software: books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system.
 
 ## Course Information
@@ -20,7 +22,7 @@ This course assumes you are using a bash-like command line.
 
 If you are using a University provided laptop you can use Git Bash as the command line. You can find this by hitting the Windows key to bring up the Start Menu, and then by searching for 'Git Bash'. This gives us a windows command line that acts more like bash. If you are using your own machine, you can use the existing command line, or [install Git Bash by downloading it](https://gitforwindows.org/).
 
-Instructions you should enter into the command line look like the following:
+Instructions you should enter on the command line look like the following:
 
 ```bash
 $ type-this-command-and-hit-enter

@@ -10,7 +10,7 @@ automated version control is much better than this situation:
 "Piled Higher and Deeper" by Jorge Cham, http://www.phdcomics.com
 
 We've all been in this situation before: it seems ridiculous to have
-multiple nearly-identical versions of the same document. Some word
+multiple nearly identical versions of the same document. Some word
 processors let us deal with this a little better, such as Microsoft
 Word's [Track Changes](https://support.office.com/en-us/article/Track-changes-in-Word-197ba630-0f5f-4a8e-9a77-3712475e806a), Google Docs' [version
 history](https://support.google.com/docs/answer/190843?hl=en), or LibreOffice's [Recording and Displaying Changes](https://help.libreoffice.org/Common/Recording_and_Displaying_Changes).
@@ -48,7 +48,7 @@ across different computers, facilitating collaboration among different people.
 > Tools like RCS, CVS, or Subversion have been around since the early 1980s and are used by many large companies.
 > However, many of these are now considered legacy systems (i.e., outdated) due to various limitations in their capabilities.
 > More modern systems, such as Git and [Mercurial](https://swcarpentry.github.io/hg-novice/),
-> are *distributed*, meaning that they do not need a centralized server to host the repository.
+> are _distributed_, meaning that they do not need a centralized server on which to store the repository.
 > These modern systems also include powerful merging tools that make it possible for multiple authors to work on
 > the same files concurrently.
 

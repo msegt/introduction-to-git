@@ -13,17 +13,16 @@ and see what Git says:
 $ git status
 ```
 
-
 ```output
 On branch master
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use “git add <file>...” to include in what will be committed)
 
 	a.dat
 	b.dat
 	c.dat
 	results/
-nothing added to commit but untracked files present (use "git add" to track)
+nothing added to commit but untracked files present (use “git add” to track)
 ```
 
 Putting these files under version control would be a waste of disk space. What's worse, having them all listed could distract us from changes that actually matter, so let's tell Git to ignore them.
@@ -34,7 +33,6 @@ We do this by creating a file in the root directory of our project called `.giti
 $ nano .gitignore
 $ cat .gitignore
 ```
-
 
 ```output
 *.dat
@@ -52,20 +50,19 @@ $ git status
 ```output
 On branch master
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+  (use “git add <file>...” to include in what will be committed)
 
 	.gitignore
-nothing added to commit but untracked files present (use "git add" to track)
+nothing added to commit but untracked files present (use “git add” to track)
 ```
 
-The only thing Git notices now is the newly-created `.gitignore` file. You might think we wouldn't want to track it, but everyone we're sharing our repository with will probably want to ignore the same things that we're ignoring. Let's add and commit `.gitignore`:
+The only thing Git notices now is the newly created `.gitignore` file. You might think we wouldn't want to track it, but everyone we're sharing our repository with will probably want to ignore the same things that we're ignoring. Let's add and commit `.gitignore`:
 
 ```bash
 $ git add .gitignore
-$ git commit -m "Ignore data files and the results folder."
+$ git commit -m “Ignore data files and the results folder."
 $ git status
 ```
-
 
 ```output
 # On branch master
@@ -78,13 +75,11 @@ As a bonus, using `.gitignore` helps us avoid accidentally adding to the reposit
 $ git add a.dat
 ```
 
-
 ```output
 The following paths are ignored by one of your .gitignore files:
 a.dat
 Use -f if you really want to add them.
 ```
-
 
 If we really want to override our ignore settings, we can use `git add -f` to force Git to add something. For example, `git add -f a.dat`. We can also always see the status of ignored files if we want:
 
@@ -95,7 +90,7 @@ $ git status --ignored
 ```output
 On branch master
 Ignored files:
- (use "git add -f <file>..." to include in what will be committed)
+ (use “git add -f <file>...” to include in what will be committed)
 
         a.dat
         b.dat
@@ -105,7 +100,6 @@ Ignored files:
 nothing to commit, working directory clean
 ```
 
-
 > ## Exercise: Ignoring Nested Files
 >
 > Given a directory structure that looks like:
@@ -114,7 +108,6 @@ nothing to commit, working directory clean
 > results/data
 > results/plots
 > ```
->
 >
 > How would you ignore only `results/plots` and not `results/data`?
 >
@@ -145,7 +138,6 @@ nothing to commit, working directory clean
 > !final.data      # except final.data
 > ```
 >
->
 > The exclamation point operator will include a previously excluded entry.
 
 &nbsp;
@@ -161,7 +153,6 @@ nothing to commit, working directory clean
 > results/data/position/gps/info.txt
 > results/plots
 > ```
->
 >
 > What's the shortest `.gitignore` rule you could write to ignore all `.data` files in `result/data/position/gps`? Do not ignore the `info.txt`.
 >
@@ -180,13 +171,11 @@ nothing to commit, working directory clean
 > !*.data
 > ```
 >
->
 > What will be the result?
 >
 > #### Solution
 >
 > The `!` modifier will negate an entry from a previously defined ignore pattern. Because the `!*.data` entry negates all of the previous `.data` files in the `.gitignore`, none of them will be ignored, and all `.data` files will be tracked.
->
 
 &nbsp;
 
@@ -196,7 +185,7 @@ nothing to commit, working directory clean
 >
 > 1. Write **one** `.gitignore` entry that excludes files of the form `log_01`, `log_02`, etc.
 >
-> 2. Test your "ignore pattern" by creating some dummy files of the form `log_01`, etc.
+> 2. Test your “ignore pattern” by creating some dummy files of the form `log_01`, etc.
 >
 > 3. You find that the file `log_01` is very important after all, add it to the tracked files without changing the `.gitignore` again.
 >
@@ -204,5 +193,5 @@ nothing to commit, working directory clean
 >
 > #### Solution
 >
-> 1. append either `log_*`  or  `log*`  as a new entry in your .gitignore
-> 3. track `log_01` using   `git add -f log_01`
+> 1. append either `log_*` or `log*` as a new entry in your .gitignore
+> 2. track `log_01` using `git add -f log_01`
