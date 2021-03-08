@@ -18,7 +18,7 @@ To accept access to the Owner's repo, the Collaborator needs to respond to a not
 Next, the Collaborator needs to download a copy of the Owner's repository to their machine. This is called "cloning a repo". To clone the Owner's repo into their `Desktop` folder, the Collaborator enters:
 
 ```bash
-$ git clone git@gitlab.cs.cf.ac.uk:USERNAME/planets.git ~/h/USERNAME-planets
+$ git clone git@git.cardiff.ac.uk:USERNAME/planets.git ~/h/USERNAME-planets
 ```
 
 ![After Creating Clone of Repository](_img/git-collaborating.svg)
@@ -57,7 +57,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+To git@git.cardiff.ac.uk:USERNAME/planets.git
    9272da5..29aba7c  master -> master
 ```
 
@@ -76,7 +76,7 @@ remote: Counting objects: 4, done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+From git@git.cardiff.ac.uk:USERNAME/planets.git
  * branch            master     -> FETCH_HEAD
 Updating 9272da5..29aba7c
 Fast-forward
