@@ -1,6 +1,6 @@
 # About
 
-This course can be viewed online here: http://comsc.gitpages.cardiff.ac.uk/introduction-to-git, provided you are connected to the [Cardiff University VPN](https://intranet.cardiff.ac.uk/students/it-support/wireless-and-remote-access/remote-access). To view a local version of the course, follow the instructions below
+This course can be viewed online here: https://comsc.gitpages.cardiff.ac.uk/introduction-to-git, provided you are connected to the [Cardiff University VPN](https://intranet.cardiff.ac.uk/students/it-support/wireless-and-remote-access/remote-access). To view a local version of the course, follow the instructions below
 
 
 ## Run Docsify locally
