@@ -93,7 +93,7 @@ Now that our account is authorised to access our project, the next step is to co
 Copy that URL from the browser, go into the local `planets` repository on the command line, and run this command:
 
 ```bash
-$ git remote add origin git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+$ git remote add origin git@git.cardiff.ac.uk:USERNAME/planets.git
 ```
 
 Make sure to use the URL for your repository rather than the one above: the only difference should be your username instead of `USERNAME`.
@@ -105,8 +105,8 @@ $ git remote -v
 ```
 
 ```output
-origin   git@gitlab.cs.cf.ac.uk:USERNAME/planets.git (push)
-origin   git@gitlab.cs.cf.ac.uk:USERNAME/planets.git (fetch)
+origin   git@git.cardiff.ac.uk:USERNAME/planets.git (push)
+origin   git@git.cardiff.ac.uk:USERNAME/planets.git (fetch)
 ```
 
 The name `origin` is a local nickname for your remote repository. We could use something else if we wanted to, but `origin` is by far the most common choice.
@@ -123,7 +123,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
 Writing objects: 100% (9/9), 821 bytes, done.
 Total 9 (delta 2), reused 0 (delta 0)
-To  git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+To  git@git.cardiff.ac.uk:USERNAME/planets.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ```
@@ -147,7 +147,7 @@ $ git pull origin master
 ```
 
 ```output
-From  git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+From  git@git.cardiff.ac.uk:USERNAME/planets.git
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 ```
@@ -183,7 +183,7 @@ Pulling has no effect in this case because the two repositories are already sync
 > ```
 >
 > ```output
-> From git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+> From git@git.cardiff.ac.uk:USERNAME/planets.git
 >  * branch            master     -> FETCH_HEAD
 >  * [new branch]      master     -> origin/master
 > fatal: refusing to merge unrelated histories
@@ -196,7 +196,7 @@ Pulling has no effect in this case because the two repositories are already sync
 > ```
 >
 > ```output
-> From git@gitlab.cs.cf.ac.uk:USERNAME/planets.git
+> From git@git.cardiff.ac.uk:USERNAME/planets.git
 >  * branch            master     -> FETCH_HEAD
 > Merge made by the 'recursive' strategy.
 >  README.md | 1 +
