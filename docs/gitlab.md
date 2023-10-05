@@ -2,9 +2,10 @@
 
 Version control really comes into its own when we begin to collaborate with other people. We already have most of the machinery we need to do this; the only thing missing is to copy changes from one repository to another.
 
-Systems like Git allow us to move work between any two repositories. In practice, though, it's easiest to use one copy as a central hub, and to keep it on the web rather than on someone's laptop. Most programmers use hosting services like [GitLab](https://gitlab.com), [BitBucket](https://bitbucket.org) or [Github](https://github.com/) to hold those central copies. All these services provide a level of functionality for free. In the School of Computer Science & Informatics we provide our own [university hosted version of GitLab](https://git.cardiff.ac.uk), available at [https://git.cardiff.ac.uk](https://git.cardiff.ac.uk).
+Systems like Git allow us to move work between any two repositories. In practice, though, it's easiest to use one copy as a central hub, and to keep it on the web rather than on someone's laptop. Most programmers use hosting services like [GitLab](https://gitlab.com), [BitBucket](https://bitbucket.org) or [Github](https://github.com/) to hold those central copies. All these services provide a level of functionality for free. In the School of Computer Science & Informatics we provide our own [university hosted version of GitLab](https://git.cardiff.ac.uk/), available at [https://git.cardiff.ac.uk](https://git.cardiff.ac.uk).
 
-!> In addition to the notes in this course there is an introduction to the School's Gitlab server in the [Introductory documents](https://docs.cs.cf.ac.uk/notes/using-gitlab/)
+!> In addition to the notes in this course, you can find help in the [Help](https://git.cardiff.ac.uk/help) section of the 
+University's GitLab, and [Tutorials](https://docs.gitlab.com/ee/tutorials/learn_git.html) in the official GitLab website. For students on CMT651 - Agile Software Development, there are also optional useful resources in Learning Central under Week 2.
 
 Let's start by sharing the changes we've made to our current project with the world. Head to the School's GitLab website, and log in using your standard university username and password on the LDAP tab on the 'Sign In' box.
 
@@ -12,9 +13,9 @@ Let's start by sharing the changes we've made to our current project with the wo
 
 If you've not logged in previously and have no projects, the Welcome screen will be displayed. From here you can click the 'New Project' button to create a new Project. This project will be used to score a copy of our Git repository.
 
-![GitLab welcome screen](_img/gitlab_welcome.png)
+On the 'New Project' screen you should be presented with four options: 'Create blank project', 'Create from template', 'Import project', and 'Run CI/CD for external repository'. Let's create a blank project.
 
-On the 'New Project' screen you need to give your project a name in the 'Project Name' field. You can also add an optional description for the project. The 'Visibility Level' option allows you to set the visibility of the project. A 'private' project is only visible to you, although you can explicitly choose to give other individuals access to the project later. An 'internal' project will be visible to all users logged in to the GitLab server. Public visibility would allow the project to be seen by anyone, but this option is not permitted in the University's GitLab instance. The final option would allow us to add a README file to the new project.
+You need to give your project a name in the 'Project name' field. You can also add an optional description for the project. The 'Visibility Level' option allows you to set the visibility of the project. A 'private' project is only visible to you, although you can explicitly choose to give other individuals access to the project later. An 'internal' project will be visible to all users logged in to the GitLab server. 'Public' visibility would allow the project to be seen by anyone, but this option is not permitted in the University's GitLab instance. The final option would allow us to add a README file to the new project.
 
 ?> Create a new Project called 'planets'
 
@@ -48,7 +49,7 @@ Note that our local repository still contains our earlier work on `mars.txt`, bu
 
 Before we can connect our local repository with the remote repository on GitLab, we need to identify our local account to the remote server and authorise it to make changes to our GitLab projects.
 
-Click on the profile link in the top right corner, then 'Settings' to access your profile settings page:
+Click on the profile link in the left side bar, in the top right corner, then 'Edit profile' to access your profile settings page:
 
 ![GitLab settings](_img/gitlab_settings.png)
 
@@ -56,7 +57,7 @@ Then click on 'SSH Keys' in the left hand menu:
 
 ![GitLab SSH Keys](_img/gitlab_sshkeys.PNG)
 
-Create a public/private key pair with the following command in the command line:
+Create a public/private key pair with the following command in the command line on your computer:
 
 ```bash
 ssh-keygen -t rsa -b 4096
@@ -78,15 +79,19 @@ The outputted text should begin with `ssh-rsa` and look a little something like 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCswL/nrjoonUrdbPk+0wDyvSpdH6p5ylhK0v/S3784OksVXw7P5JiM/tACUZ3qjngBcjslmbr/LffRhMAMZwVkoM0t7KJgUnTMwgOewkglnO0Ao2bUqZyQO4WVWq8tPTpXAIom5sCiKZHWHtkM3fVDFQwjedG0ekR24DRiNC2O9DqVgW3rMgWOXW/9QEjAFABLuf7XN3dXJhb1eF0aCXTL/0wYCyMgOBPZJLxy+1gsEd1tqHL6KYtspeQGVyQgmUEZPtZkjOfMNOMI6cvBm7X2fxlpy9vDXqd8ue70QEeLHPDotRyc9AfWHPl5bRtKQ+sZiaFt8tUW+d5o81DRjR15Fb3MwPJd8W9Xcfhypqs8FJkDUI1Ygt0tVNYlQwE6m/xM7d2349fnR+HSWFrEKS+6r4RurR9RX3KkKOooBhNBQvkQthDAK2V+vOtxkxm4nWzCYcEkfqUhC2csMVe7O6q2QWX7Thft1fEiY74RQfFaTH+CKD1/78/yfkQslWh/NiqLYNWEtJpYMua85xNvlWWWdUYl2ij5h/SvFC5JKCR/pxjro+Tshs;dlwCnK7Bv5Q7Wp3mxM1gA3qtkODT0eY81dMfX8ik7F6xDvmwRha/rUuZvq22jx5FXcbaxfyAFzCa1oMDSu01ahLdZi0sPY2aFu7MFGcFVc6nCA8GqoETupugda0Q== scm2mjc@X70dasgasD8D031D
 ```
 
-Select all this output, and copy it. Now paste it into the 'Key' box in the 'SSH Keys' page on GitLab, and click 'Add Key'.
+Select all this output, and copy it. Now, click 'Add new key' on GitLab and paste it into the 'Key' box in the 'SSH Keys' page on GitLab, and click 'Add Key'.
 
 ![GitLab SSH Keys](_img/gitlab_sshkey_added.PNG)
 
+You can find help on setting up your SSH Key [Here](https://git.cardiff.ac.uk/help/user/ssh).
+
 Your account on the local machine is now linked to your profile on the GitLab server, and you will be able to add code to and retrieve code from the GitLab server. If you have additional machines you would like to link, you can do this in the same way.
 
-!> Note - you will need to be connected to the University VPN to be able to push code to the Gitlab server
+!> Note - you will need to be connected to the University VPN to be able to push code to the Gitlab server.
 
 Now that our account is authorised to access our project, the next step is to connect the two repositories. We do this by making the GitLab repository a [remote](reference#remote) for the local repository. The home page of the repository on GitLab includes the string we need to identify it:
+
+![Going back to your repository on GitLab](_img/gitlab_repo.png)
 
 ![Where to Find Repository URL on GitLab](_img/gitlab_repo_url.png)
 
