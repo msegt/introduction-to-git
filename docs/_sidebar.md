@@ -1,5 +1,6 @@
 * [Home](/)
 * [The Basics](basics.md)
+* [Installing Git](install.md)
 * [Setting up Git](setup.md)
 * [Creating a Repository](creating.md)
 * [Tracking Changes](changes.md)
