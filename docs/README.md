@@ -20,7 +20,7 @@ Version control is the lab notebook of the digital world: it’s what profession
 
 This course assumes you are using a bash-like command line.
 
-If you are using a University provided laptop you can use Git Bash as the command line. You can find this by hitting the Windows key to bring up the Start Menu, and then by searching for 'Git Bash'. This gives us a windows command line that acts more like bash. If you are using your own machine, you can use the existing command line, or [install Git Bash by downloading it](https://gitforwindows.org/).
+If you are using a University provided laptop you can use Git Bash as the command line. You can find this by hitting the Windows key to bring up the Start Menu, and then by searching for 'Git Bash'. This gives us a windows command line that acts more like bash. If you are using your own machine, you can use the existing command line, or [install Git Bash by downloading it](https://gitforwindows.org/) if you are using Windows. For installation instructions on other operating systems go to [Installing Git](install.md).
 
 Instructions you should enter on the command line look like the following:
 
@@ -32,14 +32,17 @@ $ type-this-command-and-hit-enter
 
 !> Really important things look like this
 
-If you have problems using any of the software or services described in this course, check the School's [introductory documentation](https://docs.cs.cf.ac.uk/notes/) for guidance.
+If you have problems using any of the software or services described in this course, check the School's [introductory documentation](https://wiki.cs.cf.ac.uk/) for guidance.
 
-## About
+# About
 
-This course is derived from the [Software Carpentry](https://software-carpentry.org/) course '[Version Control with Git](http://swcarpentry.github.io/git-novice/)', which contains material Copyright © Software Carpentry and released under a [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The material from this source course has been adapted to add information specific to using Git and Gitlab within the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science) at [Cardiff University](http://www.cardiff.ac.uk/computer-science).
+This course is derived from the course that can be found in the master branch, which is derived from the [Software Carpentry](https://software-carpentry.org/) course '[Version Control with Git](http://swcarpentry.github.io/git-novice/)', which contains material Copyright © Software Carpentry and released under a [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The material from this source course has been adapted to add information specific to using Git and Gitlab within the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science) at [Cardiff University](http://www.cardiff.ac.uk/computer-science).
 
 “Software Carpentry” and “Data Carpentry” and their respective logos are registered trademarks of [Community Initiatives](http://communityin.org/).
 
 ### Authors
 
-Version 0.1 - Martin Chorley
+Version 0.1 (master branch) - Martin Chorley  
+
+Version 0.2 (MScSE-2023-24 branch) - Marisé Galvez Trigo
+

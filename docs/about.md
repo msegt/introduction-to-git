@@ -6,6 +6,6 @@ This course is derived from the course that can be found in the master branch, w
 
 ### Authors
 
-Version 0.1 (master branch) - Martin Chorley
+Version 0.1 (master branch) - Martin Chorley  
 
 Version 0.2 (MScSE-2023-24 branch) - Marisé Galvez Trigo
