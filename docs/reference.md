@@ -1,9 +1,10 @@
 ## Git Cheatsheets for Quick Reference
 
-*   A great [printable git cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) is available in PDF from the
-[GitHub training website](https://services.github.com/resources/).
+*   A couple of printable git cheatsheets are available in PDF from the
+[GitHub Education website](https://education.github.com/git-cheat-sheet-education.pdf) and the [GitLab website](https://about.gitlab.com/images/press/git-cheat-sheet.pdf).
 *   An [interactive one-page visualisation](http://ndpsoftware.com/git-cheatsheet.html)
     about the relationships between workspace, staging area, local repository, upstream repository, and the commands associated with each (with explanations).
+*   You can also check the following more advanced guide by [Git Immersion](https://gitimmersion.com/index.html).
 
 
 ## Glossary
