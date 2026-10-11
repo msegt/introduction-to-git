@@ -1,14 +1,22 @@
-# Git & GitLab Tutorial (CMT651)
+# About
 
-A git and GitLab tutorial for students of CMT651 Agile Software Development at Cardiff University.
+This course can be viewed online here: https://comsc.gitpages.cardiff.ac.uk/introduction-to-git, provided you are connected to the [Cardiff University VPN](https://intranet.cardiff.ac.uk/students/it-support/wireless-and-remote-access/remote-access). To view a local version of the course, follow the instructions below
 
-The site is published with GitHub Pages from the `docs/` folder of this branch: https://msegt.github.io/introduction-to-git/
 
-This branch holds only the built site. Please don't crawl, index, cache or use this content to train AI models: see `docs/robots.txt`.
+## Run Docsify locally
+1. Install Node.js from https://nodejs.org/en/
+2. Reboot
+3. Clone this repo to a suitable location on your computer: `git clone https://git.cardiff.ac.uk/comsc/introduction-to-git.git`
+4. install docsify: `npm i docsify-cli -g`
+5. run docsify server from `introduction-to-git` to folder: `docsify init ./course`
+6. load up the URL the server provides (probably `http://localhost:3000`)
 
-© Dr Maria (Marisé) Galvez Trigo, Cardiff University. Parts adapted from Dr Lowri Williams' 25/26 version control materials.
+This course is derived from the [Software Carpentry](https://software-carpentry.org/) course '[Version Control with Git](http://swcarpentry.github.io/git-novice/)', which contains material Copyright © Software Carpentry and released under a [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The material from this source course has been adapted to add information specific to using Git and Gitlab within the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science) at [Cardiff University](http://www.cardiff.ac.uk/computer-science).
 
-## Earlier versions
+“Software Carpentry” and “Data Carpentry” and their respective logos are registered trademarks of [Community Initiatives](http://communityin.org/).
 
-- Branch `MScSE-2023-24`: the 2023/24 version (Docsify), updated by Marisé Galvez Trigo.
-- Branch `master`: the original COMSC course by Martin Chorley, with contributions by Paul Goddard, derived from the [Software Carpentry](https://software-carpentry.org/) course "[Version Control with Git](http://swcarpentry.github.io/git-novice/)" (material Copyright © Software Carpentry, released under a [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)).
+
+## Contributors to COMSC version
+
+Martin Chorley
+Paul Goddard
