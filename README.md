@@ -1,14 +1,14 @@
-# About
+# Git & GitLab Tutorial (CMT651)
 
-This course can be viewed online here: https://msegt.github.io/introduction-to-git
+A git and GitLab tutorial for students of CMT651 Agile Software Development at Cardiff University.
 
-The original version of the course is in the master branch and was developed by Martin Chorley, from Cardiff University. It was derived from the [Software Carpentry](https://software-carpentry.org/) course '[Version Control with Git](http://swcarpentry.github.io/git-novice/)', which contains material Copyright © Software Carpentry and released under a [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). The material from this source course has been adapted to add information specific to using Git and Gitlab within the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science) at [Cardiff University](http://www.cardiff.ac.uk/computer-science).
+The site is published with GitHub Pages from the `docs/` folder of this branch: https://msegt.github.io/introduction-to-git/
 
-“Software Carpentry” and “Data Carpentry” and their respective logos are registered trademarks of [Community Initiatives](http://communityin.org/).
+This branch holds only the built site. Please don't crawl, index, cache or use this content to train AI models: see `docs/robots.txt`.
 
+© Dr Maria (Marisé) Galvez Trigo, Cardiff University. Parts adapted from Dr Lowri Williams' 25/26 version control materials.
 
-## Contributors to COMSC version
+## Earlier versions
 
-Martin Chorley
-Paul Goddard
-Marisé Galvez Trigo
+- Branch `MScSE-2023-24`: the 2023/24 version (Docsify), updated by Marisé Galvez Trigo.
+- Branch `master`: the original COMSC course by Martin Chorley, with contributions by Paul Goddard, derived from the [Software Carpentry](https://software-carpentry.org/) course "[Version Control with Git](http://swcarpentry.github.io/git-novice/)" (material Copyright © Software Carpentry, released under a [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)).

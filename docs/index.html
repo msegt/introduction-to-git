@@ -1,26 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Git &amp; GitLab Tutorial · CMT651</title>
+<meta name="description" content="Git and GitLab tutorial for CMT651 students.">
+<!-- Ask search engines and AI crawlers not to index, cache, snippet or train on this site.
+     These tags are requests: well-behaved crawlers follow them, others may not. -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('gt-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'Introduction to Git & Gitlab',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      auto2top: true
-  }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand">
+    <button class="menu-btn" id="menuBtn" aria-label="Show pages in this section" aria-expanded="false">☰</button>
+    <a href="#/start/welcome" class="logo"><span class="logo-mark">git</span><span class="logo-text">Git &amp; GitLab Tutorial<small>CMT651 · Cardiff University</small></span></a>
+  </div>
+  <div class="tools">
+    <div class="search">
+      <input id="search" type="search" placeholder="Search, or paste an error message…" autocomplete="off" aria-label="Search the tutorial">
+      <div id="results" class="results" role="listbox" hidden></div>
+    </div>
+    <button id="themeBtn" class="icon-btn" aria-label="Switch light or dark theme" title="Light / dark">◐</button>
+  </div>
+  <nav class="tabs" id="tabs" aria-label="Sections"></nav>
+</header>
+<div class="layout">
+  <aside class="side" id="side" aria-label="Pages in this section"></aside>
+  <main id="main" tabindex="-1">
+    <noscript><div class="callout warning"><p><strong>This tutorial needs JavaScript.</strong> Please enable it in your browser.</p></div></noscript>
+    <p class="loading">Loading…</p>
+  </main>
+</div>
+<footer class="foot">
+  <p>CMT651 Agile Software Development · Dr Maria (Marisé) Galvez Trigo · Cardiff University. Parts adapted from Dr Lowri Williams' 25/26 version control materials.</p>
+  <p>Menus in GitLab change between versions: if a button isn't where this says, use the search bar at the top left of GitLab.</p>
+</footer>
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
 </body>
 </html>
